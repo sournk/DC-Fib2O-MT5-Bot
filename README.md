@@ -22,7 +22,7 @@ The Expert Adviser for MetaTrader 5. The trading strategy of the bot is Fibo ret
 8. Enable the auto trading mode in the terminal by clicking the `Algo Trading` button on the main toolbar.
 9. Load the set of settings by clicking the `Load` button and selecting the set-file.
 
-## Client's Requirements
+## Requirements
 
 Complete requirements are posted on the [task page](https://www.mql5.com/en/job/228450).
 
