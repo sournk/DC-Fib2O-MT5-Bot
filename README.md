@@ -3,7 +3,7 @@ The Expert Adviser for MetaTrader 5. The trading strategy of the bot is Fibo ret
 
 * Created by Denis Kislitsyn | denis@kislitsyn.me | [kislitsyn.me](https://kislitsyn.me)
 * https://www.mql5.com/en/job/228450
-* Version: 1.00
+* Version: 1.02
 
 !!! error WARNING
     1. The bot's trading strategy was defined by the customer, and the author is not responsible for it.
@@ -11,6 +11,15 @@ The Expert Adviser for MetaTrader 5. The trading strategy of the bot is Fibo ret
     3. The bot does not guarantee 100% deposit protection.
     4. The bot can hold positions from a few minutes to several weeks.
     5. Use the bot at your own risk.
+
+![FIB_MD](img/UM002.%20FIB_MD.gif)
+
+## What's New
+
+```
+- 1.02: [+] 'FIB_MD' adds Fibo's two modes: between BOS&CHoCH levels or between BOS&SWING levels.
+- 1.01: [*] Removed tester property for MQ VPS.
+```
 
 ## Installation
 1. Make sure that your MetaTrader 5 terminal is updated to the latest version. To test Expert Advisors, it is recommended to update the terminal to the latest beta version. To do this, run the update from the main menu `Help->Check For Updates->Latest Beta Version`. The Expert Advisor may not run on previous versions because it is compiled for the latest version of the terminal. In this case you will see messages on the `Journal` tab about it.
@@ -68,6 +77,9 @@ Complete requirements are posted on the [task page](https://www.mql5.com/en/job/
 ![Layout](img/UM001.%20Layout.png)
 
 #### 1. FIBO (FIB)
+- [x] <a name="FIB_MD"></a> `FIB_MD`: Mode:
+    - [x] `Fibo between BOS & CHoCH`
+    - [x] `Fibo between BOS & SWING`
 - [x] `FIB_TF`: Timeframe to detect BOS/CHoCH and Fibo
 - [x] `FIB_STP_EPL`: STOP order EP Level
 - [x] `FIB_STP_SLL`: STOP order SL Level
