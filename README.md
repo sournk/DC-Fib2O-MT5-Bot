@@ -3,7 +3,7 @@ The Expert Adviser for MetaTrader 5. The trading strategy of the bot is Fibo ret
 
 * Created by Denis Kislitsyn | denis@kislitsyn.me | [kislitsyn.me](https://kislitsyn.me)
 * https://www.mql5.com/en/job/228450
-* Version: 1.02
+* Version: 1.03
 
 !!! error WARNING
     1. The bot's trading strategy was defined by the customer, and the author is not responsible for it.
@@ -17,6 +17,7 @@ The Expert Adviser for MetaTrader 5. The trading strategy of the bot is Fibo ret
 ## What's New
 
 ```
+- 1.03: [+] New 'FIB_MD'=SWING&SWING added. It's also changes Fibo dir using last swing updated.
 - 1.02: [+] 'FIB_MD' adds Fibo's two modes: between BOS&CHoCH levels or between BOS&SWING levels.
 - 1.01: [*] Removed tester property for MQ VPS.
 ```
