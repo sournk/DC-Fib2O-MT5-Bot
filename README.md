@@ -81,6 +81,7 @@ Complete requirements are posted on the [task page](https://www.mql5.com/en/job/
 - [x] <a name="FIB_MD"></a> `FIB_MD`: Mode:
     - [x] `Fibo between BOS & CHoCH`
     - [x] `Fibo between BOS & SWING`
+    - [x] `Fibo between SWING & SWING`
 - [x] `FIB_TF`: Timeframe to detect BOS/CHoCH and Fibo
 - [x] `FIB_STP_EPL`: STOP order EP Level
 - [x] `FIB_STP_SLL`: STOP order SL Level
