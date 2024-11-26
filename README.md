@@ -3,7 +3,7 @@ The Expert Adviser for MetaTrader 5. The trading strategy of the bot is Fibo ret
 
 * Created by Denis Kislitsyn | denis@kislitsyn.me | [kislitsyn.me](https://kislitsyn.me)
 * https://www.mql5.com/en/job/228450
-* Version: 1.03
+* Version: 1.04
 
 !!! error WARNING
     1. The bot's trading strategy was defined by the customer, and the author is not responsible for it.
@@ -17,6 +17,9 @@ The Expert Adviser for MetaTrader 5. The trading strategy of the bot is Fibo ret
 ## What's New
 
 ```
+- 1.04: [+]: 'FIB_MD'=SWING&SWING update Fibo only if new Swing "breaks previous" one.
+        [+]: After STOP pos triggers SL LIMIT pos SL changes to STOP 1:1 SL.
+        [+]: Added 'ENT_ORD_DEL' input to leave orders in market after Fibo update.
 - 1.03: [+] New 'FIB_MD'=SWING&SWING added. It's also changes Fibo dir using last swing updated.
 - 1.02: [+] 'FIB_MD' adds Fibo's two modes: between BOS&CHoCH levels or between BOS&SWING levels.
 - 1.01: [*] Removed tester property for MQ VPS.
@@ -72,6 +75,9 @@ Complete requirements are posted on the [task page](https://www.mql5.com/en/job/
     - Use `ENT_MMT` and `ENT_MMV` inputs.
 - [x] **The presence of an ongoing trade should not prevent the bot from following the rules and placing new trades whenever the conditions are met**
     -    The bot operates only orders and positions with Magic ID set in `MSC_MGC` input. Ant other orders and positions are ignored.
+- [x] In the mode 'FIB_MD'=SWING&SWING bot must rebuild Fibo only when current Swing "breaks" previous.
+- [x] When STOP pos hit SL the bot changes LIMIT pos SL to equal value of STOP pos.
+- [x] Orders should remain in the market after the Fibo updates.
 
 ## Bot's inputs
 
@@ -94,6 +100,7 @@ Complete requirements are posted on the [task page](https://www.mql5.com/en/job/
 - [x] `ENT_STP_RR`: STOP Order TP RR
 - [x] `ENT_LIM_RR1`: LIMIT Order TP RR
 - [x] `ENT_LIM_RR2`: LIMIT Order TP RR after STOP order SL
+- [x] `ENT_ORD_DEL`: Delete orders when Fibo's updated 
 - [x] `ENT_MMT`: Money Management Type:
     - `Fixed lot`: Lot size is fixed with value from `ENT_MMV` input
     - `Fixed max loss`: The bot calculates lot size of every order and position to make max loss in account currency set in `ENT_MMV` input
